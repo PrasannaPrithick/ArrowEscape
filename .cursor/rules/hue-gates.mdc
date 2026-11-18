@@ -1,0 +1,14 @@
+---
+description: Hue Gates rules for the Arrow Escape project
+alwaysApply: true
+---
+
+# Hue Gates
+
+The playable game is Arrow Escape. Its rules are Hue Gates.
+
+- Game logic lives in `Assets/Scripts/Logic` and must not reference Unity.
+- Levels are data in `data/levels_1_25.json` (runtime copy: `Assets/Resources/Data/levels_1_25.json`). Never edit level JSON by hand. Generate changes with `tools/build_levels.py`.
+- Do not change a rule in code without updating `docs/HUE_GATES_1_MECHANIC_SPEC.md` first.
+- Run `dotnet run --project tests/HueGates.Tests.csproj` before finishing a logic change.
+- Placeholder art is drawn in code. Drop replacement PNGs in `Assets/Resources/Art/` using the names in `docs/HUE_GATES_2_ASSET_SPEC.md` (`Art/Board/arrow_coral`, `Art/Board/cell_bg`, and the rest).

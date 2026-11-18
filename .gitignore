@@ -107,3 +107,7 @@ InitTestScene*.unity*
 
 # Auto-generated cache in Assets folder
 /[Aa]ssets/[Ss]ceneDependencyCache*
+
+# Local logic-test build output
+/tests/bin/
+/tests/obj/
